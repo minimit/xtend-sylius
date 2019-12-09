@@ -1,0 +1,14 @@
+{
+    "name": "minimit/xtend-sylius",
+    "authors": [
+        {
+            "name": "Xtend",
+            "email": "rcaroli@webgriffe.com"
+        }
+    ],
+    "extra": {
+        "sylius-theme": {
+            "title": "Xtend Theme"
+        }
+    }
+}
