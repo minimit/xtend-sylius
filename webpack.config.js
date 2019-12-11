@@ -20,7 +20,7 @@ module.exports = {
       // resolve xtend-library js and less
       'xtend-library': [
         path.resolve(__dirname, './xtend-library'),
-        path.resolve(__dirname, '../../node_modules/xtend-library'),
+        path.resolve(__dirname, './node_modules/xtend-library'),
       ],
     },
   },
@@ -80,11 +80,6 @@ module.exports = {
         },
       }),
     ],
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000,
   },
   devtool: 'source-map',
   stats: {
