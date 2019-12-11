@@ -21,19 +21,37 @@ Install theme's node modules, running on the root folder:
 npm run install
 ```
 
-Compilation
+Commands
 ------------
 
-- Compile `assets/` files, running on the root folder:
+- Compile sylius and theme files:
 
 ```
 npm run build
 ```
 
-- Compile `assets/` files with watch, running on the root folder:
+- Compile sylius and theme files with watch:
 
 ```
 npm run dev
+```
+
+- Clean `public/assets/` folder:
+
+```
+npm run clean
+```
+
+- Start sylius dev server:
+
+```
+npm run start
+```
+
+- Stop sylius dev server:
+
+```
+npm run stop
 ```
 
 Eslint
