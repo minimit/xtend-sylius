@@ -1,7 +1,7 @@
 Installation
 ------------
 
-Add/edit this scripts in sylius `package.json`:
+Add/edit this scripts in `package.json`, on the root folder:
 
 ```
 "scripts": {
@@ -11,7 +11,7 @@ Add/edit this scripts in sylius `package.json`:
   "install": "npm install --prefix themes/xtend-sylius",
 ```
 
-Install theme's node modules:
+Install theme's node modules, running on the root folder:
 
 ```
 npm run install
@@ -20,14 +20,23 @@ npm run install
 Compilation
 ------------
 
-Compile files:
+Compile files, running on the root folder:
 
 ```
 npm run build
 ```
 
-Compile files with watch:
+Compile files with watch, running on the root folder:
 
 ```
 npm run dev
+```
+
+Eslint
+------------
+
+To use eslint theme's settings install, running on the root folder:
+
+```
+npm install --save-dev eslint eslint-config-prettier eslint-plugin-prettier prettier-eslint
 ```
