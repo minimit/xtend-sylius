@@ -15,6 +15,7 @@
     <link rel="icon" href="{{ asset('assets/shop/assets/images/favicon.ico') }}">
 
     {% block stylesheets %}
+        {% include '_stylesheets.html.twig' with {'path': 'assets/shop/assets/fonts/icons/style.css'} %}
         {% include '_stylesheets.html.twig' with {'path': 'assets/shop/assets/theme.min.css'} %}
         {{ sonata_block_render_event('sylius.shop.layout.stylesheets') }}
     {% endblock %}
