@@ -1,0 +1,37 @@
+<div class="drop-container" data-xt-drop>
+    <button type="button" class="btn btn--header-right" aria-label="Account">
+        <span><span class="icon-user"></span></span>
+    </button>
+    <div class="drop drop--default drop--right">
+        <div class="drop-inner">
+            <div class="drop-design"></div>
+            <div class="drop-content">
+                <ul class="list list--drop">
+                    {% if is_granted('ROLE_USER') %}
+                        <li>
+                            <a href="{{ path('sylius_shop_account_dashboard') }}">
+                                {{ 'sylius.ui.my_account'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('sylius_shop_logout') }}" class="sylius-logout-button">
+                                {{ 'sylius.ui.logout'|trans }}
+                            </a>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a href="{{ path('sylius_shop_login') }}">
+                                {{ 'sylius.ui.login'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('sylius_shop_register') }}">
+                                {{ 'sylius.ui.register'|trans }}
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

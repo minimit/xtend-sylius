@@ -32,12 +32,10 @@
         {% endblock %}
 
         {% block header %}
-            <header>
-                <header class="site_header">
-                    {% include '@SyliusShop/_header.html.twig' %}
-                </header>
-                {{ sonata_block_render_event('sylius.shop.layout.after_header') }}
+            <header class="site_header">
+                {% include '@SyliusShop/_header.html.twig' %}
             </header>
+            {{ sonata_block_render_event('sylius.shop.layout.after_header') }}
         {% endblock %}
 
         {% include '@SyliusShop/_flashes.html.twig' %}

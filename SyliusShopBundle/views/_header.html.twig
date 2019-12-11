@@ -13,27 +13,9 @@
 
             <div class="header_center">
 
-                <div class="header_center_top">
-                    <nav class="list">
-                        <a href="#">
-                            <span>Lorem ipsum</span>
-                        </a>
-                        <a href="#">
-                            <span>Lorem ipsum</span>
-                        </a>
-                        <a href="#">
-                            <span>Lorem ipsum</span>
-                        </a>
-                    </nav>
-                </div>
-
-                <div class="header_center_separator"></div>
-
-                <div class="header_center_bottom">
-                    <nav class="list">
-                        {{ render(url('sylius_shop_partial_taxon_index_by_code', {'code': 'category', 'template': 'Taxon/_links.html.twig'})) }}
-                    </nav>
-                </div>
+                <nav class="list">
+                    {{ render(url('sylius_shop_partial_taxon_index_by_code', {'code': 'category', 'template': 'Taxon/_links.html.twig'})) }}
+                </nav>
 
             </div>
 
