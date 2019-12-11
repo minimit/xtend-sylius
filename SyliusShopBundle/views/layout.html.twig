@@ -5,16 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>{% block title %}Sylius{% endblock %}</title>
+    <title>{% block title %}Xtend Sylius Theme{% endblock %}</title>
 
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
     {% block metatags %}
     {% endblock %}
 
-    {% block stylesheets %}
-        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/shop/css/style.css'} %}
+    <link rel="icon" href="{{ asset('assets/shop/assets/images/favicon.ico') }}">
+    <meta name="theme-color" content="#ffffff">
 
+    {% block stylesheets %}
         {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/shop/assets/theme.min.css'} %}
         {{ sonata_block_render_event('sylius.shop.layout.stylesheets') }}
     {% endblock %}
@@ -67,14 +68,10 @@
 </div>
 
 {% block javascripts %}
-    {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/shop/js/app.js'} %}
-
-    LOREM IPSUM
     {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/shop/assets/theme.min.js'} %}
     {{ sonata_block_render_event('sylius.shop.layout.javascripts') }}
 {% endblock %}
 
-{% include '@SyliusUi/Modal/_confirmation.html.twig' %}
 {{ sonata_block_render_event('sylius.shop.layout.after_body') }}
 </body>
 </html>
