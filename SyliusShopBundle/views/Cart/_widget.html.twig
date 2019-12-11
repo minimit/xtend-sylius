@@ -1,0 +1,53 @@
+{% import "@SyliusShop/Common/Macro/money.html.twig" as money %}
+
+<div class="drop-container" id="drop--minicart" data-xt-drop>
+    <button type="button" class="btn btn--header-right btn--minicart" aria-label="Cart">
+        <span>
+            <span class="icon-cart"></span>
+            {% if not cart.empty %}
+                <span class="btn--minicart_badge">
+                    {{ cart.items|length }}
+                </span>
+            {% endif %}
+        </span>
+    </button>
+    <div class="drop drop--default drop--right">
+        <div class="drop-inner">
+            <div class="drop-design"></div>
+            <div class="drop-content">
+                {{ sonata_block_render_event('sylius.shop.partial.cart.summary.before_popup_content', {'cart': cart}) }}
+
+                {% if cart.empty %}
+                    {{ 'sylius.ui.your_cart_is_empty'|trans }}.
+                {% else %}
+                    <ul class="list-block">
+                        {% for item in cart.items %}
+                            <li>
+                                <div class="drop--minicart_item">
+                                    <div>{{ item.quantity }} x {{ item.product }}</div>
+                                    <div>{{ money.convertAndFormat(item.unitPrice) }}</div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                        <li>
+                            <div class="drop--minicart_item drop--minicart_item--big">
+                                <div>{{ 'sylius.ui.subtotal'|trans }}</div>
+                                <div>{{ money.convertAndFormat(cart.itemsTotal) }}</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="drop--minicart_action">
+                        <a href="{{ path('sylius_shop_checkout_start') }}" class="btn btn--primary block">
+                            <span>{{ 'polyphoto.gotocheckout'|trans }}</span>
+                        </a>
+                        <a href="{{ path('sylius_shop_cart_summary') }}" class="btn btn--secondary block">
+                            <span>{{ 'polyphoto.gotocart'|trans }}</span>
+                        </a>
+                    </div>
+                {% endif %}
+
+                {{ sonata_block_render_event('sylius.shop.partial.cart.summary.after_popup_content', {'cart': cart}) }}
+            </div>
+        </div>
+    </div>
+</div>

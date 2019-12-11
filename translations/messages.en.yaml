@@ -1,0 +1,22 @@
+sylius:
+    ui:
+        brand: Xtend Sylius Theme
+        author: Webgriffe S.r.l.
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu volutpat nisl. Nullam pellentesque efficitur tempor. Phasellus euismod nulla tellus, quis facilisis sapien aliquam non.
+        categories: Categories
+        support: Support
+        info: Info
+        legal_notes: Legal notes
+        cookie_policy: Cookies
+        privacy_policy: Privacy
+        credits: Credits
+        supports:
+            assistance: Assistance
+            conditions: Conditions
+            resolution: Resolutions
+        infos:
+            company: Company
+            contacts: Contacts
+            resellers: Resellers
+            news: News
+            stories: Stories

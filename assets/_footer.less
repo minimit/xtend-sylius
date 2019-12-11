@@ -1,0 +1,121 @@
+/**
+ * footer
+ */
+
+.footer {
+    .text-inverse();
+    background: @gray-800;
+}
+
+/**
+ * footer_top
+ */
+
+.footer_top {
+    .padding(top, big);
+    @media @max-md {
+        text-align: center;
+        .row {
+            .row-space(none);
+        }
+    }
+}
+
+.footer_top_text {
+    .col(12);
+    .col-custom(40%, md);
+    font-size: 1.4rem;
+    @media @max-md {
+        .margin(bottom, medium);
+    }
+    .footer_top_text_inner {
+        @media @min-md {
+            max-width: 35rem;
+        }
+    }
+    img {
+        @media @max-md {
+            .margin(x, auto);
+        }
+        @media @min-md {
+            .margin(top, 2rem);
+        }
+    }
+}
+
+.footer_top_links {
+    .col(12);
+    .col-custom(20%, md);
+    font-size: 12px;
+    .footer_top_links_list {
+        > .list-block {
+            .list-space(small);
+        }
+        @media @max-md {
+            .collapse-height();
+            > .list-block {
+                .padding(bottom, medium);
+            }
+        }
+    }
+    a {
+        .link-none();
+    }
+    h6 {
+        @media @max-md {
+            position: relative;
+            margin: 0 !important;
+            .padding(y, medium);
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: fade(@white, 10%);
+            }
+        }
+        @media @min-md {
+            .spacing-medium() !important;
+        }
+    }
+}
+
+/**
+ * footer_bottom
+ */
+
+.footer_bottom {
+    .padding(top, medium);
+    .padding(bottom, big);
+    .padding(top, giant, md);
+    @media @max-md {
+        text-align: center;
+        .row {
+            justify-content: center !important;
+        }
+    }
+}
+
+.footer_bottom_copy {
+    .muted();
+    font-size: 10px;
+}
+
+.footer_bottom_links {
+    .muted();
+    font-size: 10px;
+    > .list {
+        .list-space(small);
+        align-items: center;
+        @media @max-sm {
+            .list-space(tiny);
+            justify-content: center;
+        }
+    }
+    a {
+        .link-none();
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,108 @@
+<div class="footer">
+
+    <div class="footer_top">
+        <div class="container">
+            <div class="row justify-content--space-between">
+
+                <div class="footer_top_text">
+                    <div class="footer_top_text_inner">
+                        <h6>{{ 'sylius.ui.brand'|trans }}</h6>
+                        <p>{{ 'sylius.ui.description'|trans }}</p>
+                    </div>
+                </div>
+
+                <div class="footer_top_links"
+                     data-xt-toggle='{"elements": "h6", "targets": ".footer_top_links_list"}'>
+                    <h6>
+                        {{ 'sylius.ui.categories'|trans }}
+                    </h6>
+                    <div class="footer_top_links_list">
+                        <nav class="list-block">
+                            {{ render(url('sylius_shop_partial_taxon_index_by_code', {'code': 'category', 'template': 'Taxon/_links.html.twig'})) }}
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="footer_top_links"
+                     data-xt-toggle='{"elements": "h6", "targets": ".footer_top_links_list"}'>
+                    <h6>
+                        {{ 'sylius.ui.support'|trans }}
+                    </h6>
+                    <div class="footer_top_links_list">
+                        <nav class="list-block">
+                            <a href="#">
+                                {{ 'sylius.ui.supports.assistance'|trans }}
+                            </a>
+                            <a href="#">
+                                {{ 'sylius.ui.supports.conditions'|trans }}
+                            </a>
+                            <a href="#" target="_blank">
+                                {{ 'sylius.ui.supports.resolution'|trans }}
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="footer_top_links"
+                     data-xt-toggle='{"elements": "h6", "targets": ".footer_top_links_list"}'>
+                    <h6>
+                        {{ 'sylius.ui.info'|trans }}
+                    </h6>
+                    <div class="footer_top_links_list">
+                        <nav class="list-block">
+                            <a href="#">
+                                {{ 'sylius.ui.infos.company'|trans }}
+                            </a>
+                            <a href="#">
+                                {{ 'sylius.ui.infos.contacts'|trans }}
+                            </a>
+                            <a href="#">
+                                {{ 'sylius.ui.infos.resellers'|trans }}
+                            </a>
+                            <a href="#">
+                                {{ 'sylius.ui.infos.news'|trans }}
+                            </a>
+                            <a href="#">
+                                {{ 'sylius.ui.infos.stories'|trans }}
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row row-space--small justify-content--space-between align-items--center">
+
+                <div class="footer_bottom_copy">
+                    &copy; {{ date()|format_date('YYYY') }} {{ 'sylius.ui.author'|trans }}
+                </div>
+
+                <div class="footer_bottom_links">
+                    <nav class="list">
+                        <a href="#">
+                            {{ 'sylius.ui.legal_notes'|trans }}
+                        </a>
+                        <span class="separator separator--bar"></span>
+                        <a href="#">
+                            {{ 'sylius.ui.cookie_policy'|trans }}
+                        </a>
+                        <span class="separator separator--bar"></span>
+                        <a href="#">
+                            {{ 'sylius.ui.privacy_policy'|trans }}
+                        </a>
+                        <span class="separator separator--bar"></span>
+                        <a href="https://www.webgriffe.com" target="_blank">
+                            {{ 'sylius.ui.credits'|trans }}
+                        </a>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

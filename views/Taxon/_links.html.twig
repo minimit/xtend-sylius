@@ -1,0 +1,7 @@
+{% if taxons|length > 0 %}
+    {% for taxon in taxons %}
+        <a href="{{ path('sylius_shop_product_index', {'slug': taxon.slug, '_locale': taxon.translation.locale}) }}">
+            <span>{{ taxon.name }}</span>
+        </a>
+    {% endfor %}
+{% endif %}
