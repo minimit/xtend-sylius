@@ -9,6 +9,8 @@ Add/edit this scripts in `package.json`, on the root folder:
   "dev": "gulp shop-watch & npm run dev --prefix themes/xtend-s
   "clean": "php bin/console cache:clear && rm -rf public/assets",ylius",
   "install": "npm install --prefix themes/xtend-sylius",
+  "start": "bin/console server:start",
+  "stop": "bin/console server:stop",
 ```
 
 Install theme's node modules, running on the root folder:
