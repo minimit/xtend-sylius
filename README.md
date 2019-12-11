@@ -1,5 +1,4 @@
-Installation
-------------
+##Installation
 
 Copy files from repository to `themes/xtend-theme-sylius`.
 
@@ -21,8 +20,7 @@ Install theme's node modules, running on the root folder:
 npm run install
 ```
 
-Commands
-------------
+##Commands
 
 - Compile sylius and theme files:
 
@@ -54,8 +52,7 @@ npm run start
 npm run stop
 ```
 
-Eslint
-------------
+##Eslint
 
 To use eslint theme's settings, running on the root folder:
 
