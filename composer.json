@@ -1,5 +1,5 @@
 {
-    "name": "minimit/xtend-sylius",
+    "name": "minimit/xtend-theme-sylius",
     "authors": [
         {
             "name": "Xtend",
@@ -8,7 +8,7 @@
     ],
     "extra": {
         "sylius-theme": {
-            "title": "Xtend Theme"
+            "title": "Xtend Theme Sylius"
         }
     }
 }

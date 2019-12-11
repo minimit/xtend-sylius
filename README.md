@@ -5,10 +5,10 @@ Add/edit this scripts in `package.json`, on the root folder:
 
 ```
 "scripts": {
-  "build": "gulp build & npm run build --prefix themes/xtend-sylius",
-  "dev": "gulp shop-watch & npm run dev --prefix themes/xtend-s
-  "clean": "php bin/console cache:clear && rm -rf public/assets",ylius",
-  "install": "npm install --prefix themes/xtend-sylius",
+  "build": "gulp build & npm run build --prefix themes/xtend-theme-sylius",
+  "dev": "gulp shop-watch & npm run dev --prefix themes/xtend-theme-sylius",
+  "clean": "php bin/console cache:clear && rm -rf public/assets",
+  "install": "npm install --prefix themes/xtend-theme-sylius",
   "start": "bin/console server:start",
   "stop": "bin/console server:stop",
 ```
