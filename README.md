@@ -1,6 +1,8 @@
 Installation
 ------------
 
+Copy files from repository to `themes/xtend-theme-sylius`.
+
 Add/edit this scripts in `package.json`, on the root folder:
 
 ```
@@ -22,13 +24,13 @@ npm run install
 Compilation
 ------------
 
-Compile files, running on the root folder:
+- Compile `assets/` files, running on the root folder:
 
 ```
 npm run build
 ```
 
-Compile files with watch, running on the root folder:
+- Compile `assets/` files with watch, running on the root folder:
 
 ```
 npm run dev
@@ -37,7 +39,7 @@ npm run dev
 Eslint
 ------------
 
-To use eslint theme's settings install, running on the root folder:
+To use eslint theme's settings, running on the root folder:
 
 ```
 npm install --save-dev eslint eslint-config-prettier eslint-plugin-prettier prettier-eslint
