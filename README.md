@@ -1,6 +1,10 @@
+# WIP pre 1.0 version: api changing fast
+
 ## Installation
 
-Copy files from repository to `themes/xtend-theme-sylius`.
+Download the [latest release](https://github.com/minimit/xtend-theme-sylius/releases/latest).
+
+Copy the files to `themes/xtend-theme-sylius`.
 
 Add/edit this scripts in `package.json`, on the root folder:
 
