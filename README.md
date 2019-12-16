@@ -61,5 +61,5 @@ npm run stop
 To use eslint theme's settings, running on the root folder:
 
 ```
-npm install --save-dev eslint eslint-config-prettier eslint-plugin-prettier prettier-eslint
+yarn add --save-dev eslint eslint-config-prettier eslint-plugin-prettier prettier-eslint
 ```
