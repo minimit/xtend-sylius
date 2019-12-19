@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .flex--auto();
+    .flex-auto();
     @media @max-md {
         display: none;
     }
@@ -58,9 +58,9 @@
         .list-space(none);
         > * {
             .btn();
-            .btn--text();
-            .btn--giant();
-            .btn--tall();
+            .btn-text();
+            .btn-giant();
+            .btn-tall();
             @media @min-md and @max-lg {
                 .padding(x, 1.5rem);
             }
@@ -81,26 +81,26 @@
     }
 }
 
-.btn--header-right {
+.btn-header-right {
     @media @max-md {
-        .btn--text();
-        .btn--giant();
-        .btn--narrow();
-        .btn--tall();
-        .btn--squared();
+        .btn-text();
+        .btn-giant();
+        .btn-narrow();
+        .btn-tall();
+        .btn-squared();
     }
     @media @min-md {
-        .btn--default();
-        .btn--giant();
-        .btn--icon();
+        .btn-default();
+        .btn-giant();
+        .btn-icon();
     }
 }
 
-.btn--menu-mobile {
+.btn-menu-mobile {
     .margin(right, small) !important;
-    .btn--text();
-    .btn--tall();
-    .btn--squared();
+    .btn-text();
+    .btn-tall();
+    .btn-squared();
     @media @min-md {
         display: none;
     }
@@ -123,8 +123,8 @@
         > * {
             .full();
             .btn();
-            .btn--text();
-            .btn--giant();
+            .btn-text();
+            .btn-giant();
         }
     }
 }
@@ -147,7 +147,7 @@
         > * {
             .full();
             .btn();
-            .btn--big();
+            .btn-big();
             .muted();
         }
     }
@@ -167,15 +167,15 @@
     right: -1.5rem;
     padding: 3px 6px;
     border-radius: 12px;
-    background: @accent--dark;
-    .font-sans--semibold();
+    background: @accent-dark;
+    .font-sans-semibold();
     font-size: 12px;
     color: @white;
 }
 
 #drop--minicart {
     @media @max-sm {
-        .drop-container--static();
+        .drop-container-static();
     }
     .drop-content {
         padding: 2rem 3rem;
@@ -196,7 +196,7 @@
 }
 
 .drop--minicart_item--big {
-    .font-sans--semibold();
+    .font-sans-semibold();
     text-transform: uppercase;
 }
 
