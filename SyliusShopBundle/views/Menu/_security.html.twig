@@ -2,11 +2,11 @@
     <button type="button" class="btn btn--header-right" aria-label="Account">
         <span><span class="icon-user"></span></span>
     </button>
-    <div class="drop drop--default drop--right">
+    <div class="drop drop-default drop-right">
         <div class="drop-inner">
             <div class="drop-design"></div>
             <div class="drop-content">
-                <ul class="list list--drop">
+                <ul class="list list-drop">
                     {% if is_granted('ROLE_USER') %}
                         <li>
                             <a href="{{ path('sylius_shop_account_dashboard') }}">
