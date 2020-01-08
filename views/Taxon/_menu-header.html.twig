@@ -1,0 +1,32 @@
+{% if taxons|length > 0 %}
+    {% for taxon in taxons %}
+        {% if taxon.children|length > 0 %}
+            <div class="drop-container" data-xt-drop>
+                <button type="button" class="btn btn-primary">
+                    {{ taxon.name }}
+                </button>
+                <div class="drop drop-default drop-bottom drop-center">
+                    <div class="drop-inner">
+                        <div class="drop-design"></div>
+                        <div class="drop-content">
+                            <ul class="list list-drop">
+                                {% for childTaxon in taxon.children %}
+                                    <li>
+                                        <a href="{{ path('sylius_shop_product_index', {'slug': childTaxon.slug, '_locale': childTaxon.translation.locale}) }}">
+                                            {{ childTaxon.name }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <a href="{{ path('sylius_shop_product_index', {'slug': taxon.slug, '_locale': taxon.translation.locale}) }}"
+               class="btn btn-primary">
+                {{ taxon.name }}
+            </a>
+        {% endif %}
+    {% endfor %}
+{% endif %}
