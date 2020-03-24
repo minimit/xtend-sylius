@@ -20,7 +20,7 @@ module.exports = {
     alias: {
       // resolve xtend-library js and less
       'xtend-library': [
-        path.resolve(__dirname, './xtend-library'),
+        path.resolve(__dirname, './assets/xtend-library'),
         path.resolve(__dirname, './node_modules/xtend-library'),
       ],
     },
